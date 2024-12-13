@@ -5,10 +5,10 @@
         <title>{{ title }}</title>
         <meta property="og:title" content="{{ title }}" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="{{ env.BASE_URL + page.url }}" />
-        <meta name="og:description" content="{{ description }}">
-        <meta property="og:image" content="{{ social_img }}" />
-        <meta property="og:image:alt" content="{{ social_img_alt }}" />
+        <meta property="og:url" content={{ env.BASE_URL + page.url }} />
+        <meta property="og:description" content="{{ description }}">
+        <meta property="og:image" content={{ social_img.url }} />
+        <meta property="og:image:alt" content="{{ social_img.alt }}" />
         <meta name="fediverse:creator" content="@jkaego@mastodon.social" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
