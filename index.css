@@ -1,0 +1,156 @@
+/*
+Reset
+http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom CSS */
+ body {
+     margin: .5rem;
+     padding: 1.5rem;
+ }
+
+/*.fraunces-n {*/
+/*    font-family: "Fraunces", serif;*/
+/*    font-optical-sizing: auto;*/
+/*    font-weight: 800;*/
+/*    font-style: normal;*/
+/*    font-variation-settings: "SOFT" 0, "WONK" 1;*/
+/*}*/
+
+/*.fraunces-i {*/
+/*    font-family: "Fraunces", serif;*/
+/*    font-optical-sizing: auto;*/
+/*    font-weight: 800;*/
+/*    font-style: italic;*/
+/*    font-variation-settings: "SOFT" 0, "WONK" 1;*/
+/*}*/
+
+p, ul, li, a {
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 80ch;
+    line-height: 1.5;
+    font-size: var(--step-0);
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+}
+
+header {
+    margin-bottom: 2.5rem;
+}
+
+:root {
+    --step--2: clamp(0.7813rem, 0.7149rem + 0.3541vw, 1.6rem);
+    --step--1: clamp(0.9375rem, 0.8514rem + 0.4595vw, 2rem);
+    --step-0: clamp(1.125rem, 1.0135rem + 0.5946vw, 2.5rem);
+    --step-1: clamp(1.35rem, 1.2061rem + 0.7676vw, 3.125rem);
+    --step-2: clamp(1.62rem, 1.4346rem + 0.9886vw, 3.9063rem);
+    --step-3: clamp(1.944rem, 1.7057rem + 1.2708vw, 4.8828rem);
+    --step-4: clamp(2.3328rem, 2.0271rem + 1.6306vw, 6.1035rem);
+    --step-5: clamp(2.7994rem, 2.4077rem + 2.0887vw, 7.6294rem);
+    --step-6: clamp(3.3592rem, 2.8584rem + 2.6714vw, 9.5367rem);
+    --step-7: clamp(4.0311rem, 3.3914rem + 3.4118vw, 11.9209rem);
+    --step-8: clamp(4.8373rem, 4.0213rem + 4.3519vw, 14.9012rem);
+}
+
+.site_title {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: var(--step-8);
+    margin-bottom: 1.5rem;
+}
+
+.page_title {
+    font-family: "Fraunces", serif;
+}
+
+.note_title {
+    font-size: var(--step-2);
+}
+
+.site_desc {
+    max-width: 40ch;
+}
+
+.social_img_thumbnail {
+    max-width: 20vw;
+}
+
+h1 {
+    font-size: var(--step-4);
+}
+
+h2 {
+    font-size: var(--step-3);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 50vw;
+}
+
+.weeknotes_list {
+    margin-top: 2.5rem;
+}
+
+.nav_list {
+    display: inline-flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.nav_list_a {
+    font-size: var(--step--2);
+}

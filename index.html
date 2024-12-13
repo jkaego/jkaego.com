@@ -1,0 +1,65 @@
+---
+pagination:
+    data: collections.weeknotes
+    size: 5
+    alias: weeknotes
+    reverse: true
+
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jay kaego</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,1&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <h1 class="site_title">jay kaego</h1>
+        <p class="site_desc">I'm a standards professional and previously a web developer, on a journey to becoming a
+            browser
+            engineer.</p>
+        <nav>
+            <ul class="nav_list">
+                <li><a href="mailto:shurikaego@gmail.com?subject=hi%20jay%20kaego" class="nav_list_a">Contact
+                    Me</a></li>
+                <li><a href="https://github.com/jkaego" class="nav_list_a">GitHub</a></li>
+                <li><a href="https://mastodon.social/@jkaego" class="nav_list_a">Mastodon</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="page_title">Weeknotes</h2>
+        <ul class="weeknotes_list">
+            {% for note in weeknotes %}
+                <li class="grid">
+                    <img src={{note.data.social_img.url}} alt="{{note.data.social_img.alt}}" class="social_img_thumbnail">
+                    <div>
+                        <h3 class="note_title">{{ note.data.title }}</h3>
+                        <p id="description">{{ note.data.description }}</p>
+                        <p class="permalink"><a href={{note.data.page.url}}
+                                                aria-label="continue reading {{note.data.title}}">Continue
+                            Reading</a></p>
+                    </div>
+                </li>
+            {%- endfor -%}
+        </ul>
+
+
+        {%- if pagination.pages.length >= 5 %}
+            <nav aria-label="pagination">
+                <ul class="pagination-list">
+                    {%- for pageEntry in pagination.pages %}
+                    <li><a href="{{ pagination.hrefs[ forloop.index0 ] }}"{% if page.url == pagination.hrefs[ forloop.index0 ] %} aria-current="page"{% endif %}>Page {{ forloop.index }}</a></li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+        {% endif %}
+
+    </main>
+
+</body>
+</html>
