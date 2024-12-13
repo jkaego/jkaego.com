@@ -3,33 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <title>{{ title }}</title>
-
-            <meta property="og:title" content="{{ title }}" />
-            <meta property="og:type" content="article" />
-            <meta property="og:url" content="{{ env.BASE_URL + page.url }}" />
-            <meta name="og:description" content="{{ description }}">
-            <meta property="og:image" content="{{ social_img }}" />
-            <meta property="og:image:alt" content="{{ social_img_alt }}" />
-
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="{{ env.BASE_URL + page.url }}" />
+        <meta name="og:description" content="{{ description }}">
+        <meta property="og:image" content="{{ social_img }}" />
+        <meta property="og:image:alt" content="{{ social_img_alt }}" />
         <meta name="fediverse:creator" content="@jkaego@mastodon.social" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,1&family=Roboto:wght@900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/index.css">
-        <link
-          href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css"
-          rel="stylesheet"
-        />
-        <style>
-          @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
-        </style>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="container">
       <header>
-        <div>
-          <h2><a href="/" aria-label="home">jay kaego</a></h2>
-        </div>
+        <h2 class="site_title_sec">jay kaego</h1>
+        <nav>
+          <ul class="nav_list">
+              <li><a href="/" class="nav_list_a">Weeknotes</a></li>
+              <li><a href="mailto:shurikaego@gmail.com?subject=hi%20jay%20kaego" class="nav_list_a">Contact
+                  Me</a></li>
+              <li><a href="https://github.com/jkaego" class="nav_list_a">GitHub</a></li>
+              <li><a href="https://mastodon.social/@jkaego" class="nav_list_a">Mastodon</a></li>
+          </ul>
+        </nav>
       </header>
 
       <article>
+          <h1 class="page_title">{{ title }}</h1>
           {{ content | safe }}
       </article>
 
