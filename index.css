@@ -33,9 +33,9 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
-    list-style: none;
-}
+/*ol, ul {*/
+/*    list-style: none;*/
+/*}*/
 blockquote, q {
     quotes: none;
 }
@@ -166,15 +166,47 @@ h2 {
 
 .weeknotes_list {
     margin-top: 2.5rem;
+    list-style: none;
 }
 
 .nav_list {
     display: inline-flex;
     gap: 1rem;
     margin-top: 1rem;
+    list-style: none;
 
 }
 
 .nav_list_a {
     font-size: var(--step--2);
+}
+
+article {
+    margin: 1.5rem;
+}
+
+article > h2 {
+    margin-bottom: 1.5rem;
+}
+
+article > ul {
+    padding-left: 2.5rem;
+}
+
+article > ul > li {
+    padding-bottom: 1.5rem;
+    line-height: 2;
+}
+
+article > ul > li > ul {
+    padding-left: 2.5rem;
+}
+
+article > ul > li > ul > li {
+    padding-bottom: .5rem;
+    line-height: 2;
+}
+
+pre.language-cpp, code.language-cpp {
+    font-size: var(--step--2)
 }

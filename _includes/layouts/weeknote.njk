@@ -14,6 +14,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,1&family=Roboto:wght@900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/index.css">
+        <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="container">
@@ -28,11 +29,12 @@
           </ul>
         </nav>
       </header>
-
-      <article>
-          <h1 class="page_title">{{ title }}</h1>
-          {{ content | safe }}
-      </article>
+      <main>
+        <h1 class="page_title">{{ title }}</h1>
+          <article>
+              {{ content | safe }}
+          </article>
+      </main>
 
      <footer>
 
