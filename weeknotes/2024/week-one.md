@@ -28,9 +28,10 @@ tags: weeknotes
 - This week I learnt about source files, headers and classes in C++. Ruby has classes and object oriented
   programming so that wasn't new to me, but files and headers were. I refactored my basic algos into their own files
   and included the headers into main.
-- Fibonacci got me stumped. Not so much the formula, but Project Euler's Even Fibonacci Numbers problem. I was 
-  really close to solving it and spent days thinking about it before giving up and looking at a solution. I was 
-  really close but there's a gap in my understanding about recursion. This was my first attempt:
+- Fibonacci got me stumped. Not so much the formula, but Project Euler's [Even Fibonacci Numbers](https://projecteuler.net/problem=2) problem. I 
+  was 
+  really close to solving it and spent days thinking about it before giving up and looking at a solution. There's a 
+  gap in my understanding about recursion. This was my attempt:
 
   
 
