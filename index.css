@@ -53,6 +53,8 @@ table {
  body {
      margin: .5rem;
      padding: 1.5rem;
+     background-color: #051D17;
+     color: #DDFFF7;
  }
 
 /*.fraunces-n {*/
@@ -82,6 +84,18 @@ p, ul, li, a {
 
 h1, h2, h3 {
     font-weight: 800;
+    color: #88C6B7;
+}
+
+a {
+    color: #FF81A9;
+}
+a:visited {
+    color: #FFA6DA;
+}
+
+a:hover {
+    color: #FFA69E;
 }
 
 header {
@@ -116,6 +130,7 @@ header {
     font-style: normal;
     font-size: var(--step-0);
     margin-bottom: 1.5rem;
+    text-decoration: none;
 }
 
 .page_title {
@@ -146,6 +161,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 50vw;
+    column-gap: 1.5rem;
 }
 
 .weeknotes_list {
