@@ -151,10 +151,17 @@ header {
 
 h1 {
     font-size: var(--step-4);
+    margin-top: var(--step-2);
 }
 
 h2 {
     font-size: var(--step-3);
+    margin-top: var(--step-2);
+}
+
+h3 {
+    font-size: var(--step-2);
+    margin-top: var(--step-1);
 }
 
 .grid {
@@ -162,11 +169,16 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     max-width: 50vw;
     column-gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 .weeknotes_list {
     margin-top: 2.5rem;
     list-style: none;
+    /*display: grid;*/
+    /*gap: 2rem;*/
+    /*grid-template-columns: repeat(2, 1fr);*/
+    justify-self: center;
 }
 
 .nav_list {
